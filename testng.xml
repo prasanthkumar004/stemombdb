@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MovieDB Client Test Suite" verbose="5">
+	
+	<test name="Test 1 stem ">
+		<parameter name="expectedCount" value="30" />
+		<parameter name="searchTextVal" value="stem" />
+				
+		<parameter name="searchText" value="stem" />
+		<parameter name="movieNames" value="The STEM Journals,Activision: STEM - in the Videogame Industry" />
+		
+		<parameter name="searchText1" value="stem" />
+		<parameter name="searchMovieName1" value="Activision: STEM - in the Videogame Industry" />
+		<parameter name="expectedReleaseDate" value="23 Nov 2010" />
+		<parameter name="expectedDirectorName" value="Mike Feurstein" />
+		
+		<parameter name="searchText2" value="stem" />
+		<parameter name="searchMovieName2" value="The STEM Journals" />
+		<parameter name="expectedPlot" value="Science, Technology, Engineering and Math" />
+		<parameter name="expectedRunTime" value="22 minutes" />
+		<classes>
+			<class name="org.stem.moviedb.client.test.TestMovieDBClient" />
+		</classes>
+	</test>
+	 
+	 
+	<test name="Test 2 avatar ">
+		<parameter name="expectedCount" value="100" />
+		<parameter name="searchTextVal" value="avatar" />
+				
+		<parameter name="searchText" value="avatar" />
+		<parameter name="movieNames" value="Avatar: The Last Airbender - The Legend of Aang,Avatar: The Last Airbender - The Burning Earth,The Smuggler (Avatar: The Last Airbender)" />
+		
+		<parameter name="searchText1" value="avatar" />
+		<parameter name="searchMovieName1" value="Avatar: The Last Airbender" />
+		<parameter name="expectedReleaseDate" value="21 Feb 2005" />
+		<parameter name="expectedDirectorName" value="N/A" />
+		
+		<parameter name="searchText2" value="Avatar" />
+		<parameter name="searchMovieName2" value="Avatar: The Last Airbender" />
+		<parameter name="expectedPlot" value="In a war-torn world of elemental magic" />
+		<parameter name="expectedRunTime" value="23 minutes" />
+		<classes>
+			<class name="org.stem.moviedb.client.test.TestMovieDBClient" />
+		</classes>
+	</test>
+	
+	
+</suite>
